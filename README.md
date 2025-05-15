@@ -29,27 +29,22 @@ Edit
 
 ## Setup Instructions
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-Ensure JSON files are in place
-Place these files inside the localDb directory:
+1. **Ensure JSON files are in place**  
+   Place these files inside the `localDb` directory:  
+   - `users.json`  
+   - `trains.json`  
+   - `tickets.json`
 
-users.json
+2. **Build and Run**  
+   Compile and run the main application class or test the service classes as needed.
 
-trains.json
+---
 
-tickets.json
+## JSON File Formats
 
-Build and Run
-Compile and run the main application class or test the service classes as needed.
+### User (`users.json`)
 
-JSON File Formats
-User (users.json)
-json
-Copy
-Edit
+```json
 [
   {
     "userId": "12345",
@@ -58,10 +53,8 @@ Edit
     "ticketsBooked": []
   }
 ]
+
 Train (trains.json)
-json
-Copy
-Edit
 [
   {
     "trainId": "78912",
@@ -75,9 +68,6 @@ Edit
   }
 ]
 Ticket (tickets.json)
-json
-Copy
-Edit
 [
   {
     "ticketId": "ABC123",
@@ -97,28 +87,41 @@ Edit
     }
   }
 ]
-How to Use
-Sign Up: Create a new user with a username and password.
+```
+## How to Use
 
-Login: Verify user credentials.
+### Sign Up
+Create a new user with a username and password.
 
-Search Trains: Search available trains between two stations.
+### Login
+Verify user credentials.
 
-Book Ticket: Book tickets for the selected train.
+### Search Trains
+Search available trains between two stations.
 
-View Bookings: List all booked tickets for a user.
+### Book Ticket
+Book tickets for the selected train.
 
-Cancel Ticket: Cancel an existing ticket.
+### View Bookings
+List all booked tickets for a user.
 
-Future Enhancements
-Integrate a real database instead of JSON files.
+### Cancel Ticket
+Cancel an existing ticket.
 
-Add a graphical user interface or web interface.
+---
 
-Implement seat selection during booking.
+## Future Enhancements
 
-Add notifications and email confirmations.
+- Integrate a real database instead of JSON files.
+- Add a graphical user interface or web interface.
+- Implement seat selection during booking.
+- Add notifications and email confirmations.
 
-Author
-Amit Kumar
-Email: amitraj8655977@gmail.com
+---
+
+## Author
+
+**Amit Kumar**  
+📧 Email: [amitraj8655977@gmail.com](mailto:amitraj8655977@gmail.com)
+
+
