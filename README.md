@@ -1,45 +1,38 @@
-Train Ticket Booking System
-Overview
+# Train Ticket Booking System
+
+## Overview
 This is a Java-based Train Ticket Booking System that allows users to sign up, log in, view available trains, book tickets, view their bookings, and cancel tickets. The system uses JSON files for local data storage and the Jackson library for JSON parsing.
 
-Features
-User Sign Up and Login with password hashing
+## Features
+- User Sign Up and Login with password hashing
+- View available trains based on source and destination
+- Book train tickets
+- View user booking history
+- Cancel booked tickets
+- JSON-based local database for users, trains, and tickets
 
-View available trains based on source and destination
+## Technologies Used
+- Java 8+
+- Jackson Databind (for JSON serialization/deserialization)
+- File-based JSON storage
+- Maven (optional for dependency management)
 
-Book train tickets
-
-View user booking history
-
-Cancel booked tickets
-
-JSON-based local database for users, trains, and tickets
-
-Technologies Used
-Java 8+
-
-Jackson Databind (for JSON serialization/deserialization)
-
-File-based JSON storage
-
-Maven (optional for dependency management)
-
-Project Structure
-cpp
-Copy
-Edit
-ticket.booking.entities    // Entities like User, Train, Ticket
-ticket.booking.services    // Business logic for booking, user services
-ticket.booking.util        // Utility classes like password hashing
-localDb                    // JSON files for storing users, trains, tickets
-Setup Instructions
-Clone the repository
+## Project Structure
+ticket.booking.entities // Entities like User, Train, Ticket
+ticket.booking.services // Business logic for booking, user services
+ticket.booking.util // Utility classes like password hashing
+localDb // JSON files for storing users, trains, tickets
 
 bash
 Copy
 Edit
-git clone <repository-url>
-cd <repository-directory>
+
+## Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
 Ensure JSON files are in place
 Place these files inside the localDb directory:
 
@@ -129,4 +122,3 @@ Add notifications and email confirmations.
 Author
 Amit Kumar
 Email: amitraj8655977@gmail.com
-
